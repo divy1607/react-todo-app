@@ -3,18 +3,22 @@ import { TextField } from "@mui/material";
 import { Button } from "@mui/material";
 
 const TodoApp = () => {
+  //initializing the variables
   const [todos, setTodos] = useState([]);
   const [inputTitle, setInputTitle] = useState('');
   const [inputDescription, setInputDescription] = useState('');
 
+  //function for change of title
   const handleTitleChange = (event) => {
     setInputTitle(event.target.value);
   };
 
+  //function for change of components
   const handleDescriptionChange = (event) => {
     setInputDescription(event.target.value);
   };
 
+  //for adding the todo in the UI
   const handleAddTodo = () => {
     if (inputTitle.trim() !== '' && inputDescription.trim() !== '') {
       setTodos([...todos, { id: Date.now(), title: inputTitle, description: inputDescription, completed: false }]);
@@ -23,6 +27,7 @@ const TodoApp = () => {
     }
   };
 
+  //checking whether all the todos are present or not
   const handleToggleComplete = (id) => {
     setTodos(
       todos.map((todo) =>
@@ -31,6 +36,7 @@ const TodoApp = () => {
     );
   };
 
+  //function for deleting todo
   const handleDeleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
