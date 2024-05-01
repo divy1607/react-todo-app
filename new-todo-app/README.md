@@ -1,8 +1,8 @@
 # Todo Application using React
 
 This is a todo application using just frontend. Without integration of any backend in it. Which means that there is no method to save file in the local storage.
-React for frontend and Material UI (mui) for extra components (CSS components)
-However, app is really fast and easy to use.
+React for frontend and Material UI (mui) for extra components (CSS components).
+However, app is really fast and easy to use with minimum number of components and code as well
 
 ## Table of Contents
 
