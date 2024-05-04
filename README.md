@@ -14,7 +14,7 @@ However, app is really fast and easy to use.
 
 To install the project, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/username/repository.git`
+1. Clone the repository: `git clone https://github.com/divy@1607/react-todo-app.git`
 2. Install dependencies: `npm install`
 3. Install the UI library : `npm install @mui/material @emotion/react @emotion/styled`
 
